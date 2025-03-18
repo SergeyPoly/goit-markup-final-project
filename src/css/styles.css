@@ -1,18 +1,19 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+/* Variables */
+@import url('./utils/variables.css');
+
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./common/reset.css');
+@import url('./common/base.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url('./sections/header.css');
+@import url('./sections/hero-section.css');
+@import url('./sections/about-us-section.css');
+@import url('./sections/our-lessons-section.css');
+@import url('./sections/proposal-section.css');
+@import url('./sections/our-teachers-section.css');
+@import url('./sections/leave-application-section.css');
+@import url('./sections/reviews-section.css');
+@import url('./sections/footer.css');
+
+@import url('./sections/mobile-menu.css');

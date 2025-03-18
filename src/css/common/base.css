@@ -1,0 +1,66 @@
+body {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  border: none;
+  background-color: var(--primary-accent-color);
+  color: var(--white-color);
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 12px;
+  transition: background-color var(--primary-transition);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--primary-hoover-color);
+}
+
+.rounded {
+  border-radius: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .rounded {
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1152px;
+    padding: 0 64px;
+  }
+}
