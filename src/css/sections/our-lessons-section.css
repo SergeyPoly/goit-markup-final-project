@@ -7,29 +7,6 @@
     align-items: center;
 }
 
-.lesssons-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-    gap: 16px;
-    max-width: 335px;
-}
-
-.lessons-main-header {
-    font-size: 32px;
-    font-weight: bold;
-    color: var(--black-color);
-    line-height: 36px;
-    letter-spacing: -2%;
-}
-
-.lessons-main-description {
-    max-width: 335px;
-}
-
 .lessons-list {
     display: flex;
     flex-direction: column;
@@ -41,8 +18,8 @@
     text-align: center;
     border: 1px solid var(--primary-accent-color);
     border-radius: 16px;
-    height: 400px;
-    width: 335px;
+    min-height: 400px;
+    max-width: 335px;
 }
 
 .lesson:hover,
@@ -95,39 +72,23 @@
 
 @media (min-width: 320px) and (max-width: 374px) {
 
-    .lessons-main-header, .lesson, .lesson-button {
+    .lesson-button {
         width: calc(100% - 30px);
     }
 
 }
 
 @media screen and (min-width: 768px) {
-    .lesssons-header {
-        max-width: 704px;
-    }
-    .lessons-main-description {
-        max-width: 665px;
-    }
-
-    .lessons-main-header {
-        font-size: 40px;
-        line-height: 48px;
-    }
-    .lessons-main-description {
-        font-size: 18px;
-        line-height: 30px;
-        letter-spacing: 0;
-    }
-
     .lessons-list {
         flex-direction: row;
         flex-wrap: wrap;
+        max-width: calc(336px * 2 + 32px);
         gap: 32px;
     }
 
     .lesson {
-        width: 336px;
-        height: 404px;
+        max-width: 336px;
+        min-height: 404px;
         border-radius: 30px;
     }
 
@@ -157,13 +118,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-
-    .lesssons-header {
-        max-width: 832px;
+    .lessons-list {
+        max-width: unset;
     }
 
     .lesson {
-        width: 320px;
+        max-width: 320px;
     }
 
     .lesson-header {
