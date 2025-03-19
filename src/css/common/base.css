@@ -35,9 +35,21 @@ body {
   z-index: -1;
 }
 
-.container {
-  margin: 0 auto;
+.section {
   padding: 0 20px;
+}
+
+.section.with-offset {
+  margin-bottom: 80px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container.wide {
+  max-width: 1152px;
 }
 
 .button {
@@ -83,8 +95,12 @@ body {
     bottom: 0px;
   }
 
-  .container {
+  .section {
     padding: 0 32px;
+  }
+
+  .section.with-offset {
+    margin-bottom: 100px;
   }
 
   .button {
@@ -102,8 +118,11 @@ body {
     height: 20px;
   }
 
-  .container {
-    max-width: 1280px;
+  .section {
     padding: 0 64px;
+  }
+
+  .section.with-offset {
+    margin-bottom: 150px;
   }
 }

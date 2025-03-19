@@ -108,7 +108,6 @@
 
 @media (min-width: 1280px) {
   .header-container {
-    width: calc(100% - 128px);
     height: 84px;
   }
   .nav-list {

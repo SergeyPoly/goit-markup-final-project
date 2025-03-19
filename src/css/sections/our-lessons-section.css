@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
 }
 
 .lesssons-header {
@@ -103,10 +102,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .our-lessons-section {
-        margin-bottom: 100px;
-    }
-
     .lesssons-header {
         max-width: 704px;
     }
@@ -147,7 +142,7 @@
         line-height: 44px;
         margin-bottom: 32px;
     }
-    
+
     .lesson-description {
         font-size: 16px;
         line-height: 24px;
@@ -158,17 +153,13 @@
         height: 60px;
         bottom: 32px;
     }
-    
+
 }
 
 @media screen and (min-width: 1280px) {
 
     .lesssons-header {
         max-width: 832px;
-    }
-
-    .our-lessons-section {
-        margin-bottom: 150px;
     }
 
     .lesson {
@@ -182,7 +173,7 @@
     .lesson-price {
         margin-bottom: 16px;
     }
-    
+
     .lesson-description {
         margin: 0 32px;
     }
@@ -190,5 +181,5 @@
     .lesson-button {
         bottom: 32px;
     }
-    
+
 }
