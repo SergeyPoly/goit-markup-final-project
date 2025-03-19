@@ -235,6 +235,7 @@
   }
 
   .leave-application-privacy {
+    line-height: 1.7;
     min-width: 500px;
   }
 }
@@ -300,11 +301,8 @@
   }
 
   .leave-application-privacy {
-    font-size: 14px;
-  }
-
-  .leave-application-privacy {
     height: 56px;
+    font-size: 14px;
   }
 
   .comment {
