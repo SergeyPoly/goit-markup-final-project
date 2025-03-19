@@ -6,9 +6,65 @@ body {
   background-color: var(--white-color);
 }
 
-.container {
-  margin: 0 auto;
+.section-title {
+  color: var(--black-color);
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.section-title:first {
+  text-transform: capitalize;
+}
+
+.section-title.with-offset {
+  margin-bottom: 16px;
+}
+
+.section-description {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 335px;
+}
+
+.section-description.with-offset {
+  margin-bottom: 40px;
+}
+
+.rectangle {
+  position: relative;
+}
+
+.rectangle::after {
+  content: '';
+  background-color: var(--secondary-accent-color);
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  border-radius: 8px;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+}
+
+.section {
   padding: 0 20px;
+}
+
+.section.with-offset {
+  margin-bottom: 80px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container.wide {
+  max-width: 1152px;
 }
 
 .button {
@@ -44,8 +100,32 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .section-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .rectangle::after {
+    height: 16px;
+    bottom: 0px;
+  }
+
+  .section-description {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 665px;
+  }
+
+  .section-description.with-offset {
+    margin-bottom: 64px;
+  }
+
+  .section {
     padding: 0 32px;
+  }
+
+  .section.with-offset {
+    margin-bottom: 100px;
   }
 
   .button {
@@ -59,8 +139,15 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
+  .rectangle::after {
+    height: 20px;
+  }
+
+  .section {
     padding: 0 64px;
+  }
+
+  .section.with-offset {
+    margin-bottom: 150px;
   }
 }

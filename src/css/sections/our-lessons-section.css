@@ -1,1 +1,145 @@
 /* our-lessons-section styles */
+
+.our-lessons-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lesson {
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--primary-accent-color);
+    border-radius: 16px;
+    min-height: 400px;
+    max-width: 335px;
+}
+
+.lesson:hover,
+.lesson:focus {
+    background-color: var(--primary-accent-color);
+    p {
+        color: var(--white-color);
+    }
+    button {
+        border: 1px solid var(--white-color);
+        background-color: rgba(var(--primary-accent-color), 0.4);
+    }
+}
+
+.lesson-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--black-color);
+    line-height: 24px;
+    letter-spacing: -2%;
+    margin: 40px 0px 16px 0px;
+}
+
+.lesson-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--black-color);
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+.lesson-description {
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.lesson-button {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 52px;
+    background-color: var(--primary-accent-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 12px;
+    width: 295px;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+    .lesson-button {
+        width: calc(100% - 30px);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .lessons-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: calc(336px * 2 + 32px);
+        gap: 32px;
+    }
+
+    .lesson {
+        max-width: 336px;
+        min-height: 404px;
+        border-radius: 30px;
+    }
+
+    .lesson-header {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 32px 0 16px 0;
+    }
+
+    .lesson-price {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 32px;
+    }
+
+    .lesson-description {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 16px 0 16px;
+    }
+
+    .lesson-button {
+        height: 60px;
+        bottom: 32px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .lessons-list {
+        max-width: unset;
+    }
+
+    .lesson {
+        max-width: 320px;
+    }
+
+    .lesson-header {
+        margin: 32px 0px 16px 0px;
+    }
+
+    .lesson-price {
+        margin-bottom: 16px;
+    }
+
+    .lesson-description {
+        margin: 0 32px;
+    }
+
+    .lesson-button {
+        bottom: 32px;
+    }
+
+}
