@@ -1,7 +1,3 @@
-.leave-application-section {
-  margin-top: 80px;
-}
-
 .leave-application-hidden {
   display: none;
 }
@@ -12,39 +8,6 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-}
-
-.leave-application-title {
-  font-size: 32px;
-
-  color: var(--black-color);
-  text-align: center;
-  font-weight: 700;
-}
-
-.leave-application-description {
-  font-size: 14px;
-  line-height: 1.74;
-  letter-spacing: 0;
-  text-align: center;
-
-  margin-top: 14px;
-}
-
-.application {
-  position: relative;
-}
-
-.application::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 12px;
-  bottom: 0;
-  right: 0;
-  background: var(--secondary-accent-color);
-  border-radius: 8px;
-  z-index: -1;
 }
 
 .leave-application-label {
@@ -180,10 +143,6 @@
 /* ---------------------------TABLET SECTION-------------------------- */
 
 @media (min-width: 768px) {
-  .leave-application-section {
-    margin-top: 100px;
-  }
-
   .leave-application-container {
     max-width: 586px;
   }
@@ -201,11 +160,6 @@
     flex-direction: column;
     align-items: center;
     width: 500px;
-  }
-
-  .leave-application-description {
-    margin-top: 16px;
-    font-size: 18px;
   }
 
   .leave-application-label {
@@ -240,10 +194,6 @@
 }
 /* -------------------------------DESKTOP SECTION-------------------------------- */
 @media (min-width: 1280px) {
-  .leave-application-section {
-    margin-top: 150px;
-  }
-
   .leave-application-container {
     max-width: 1024px;
   }
@@ -256,9 +206,6 @@
   }
   .leave-application-form {
     margin-top: 0;
-  }
-  .leave-application-description {
-    max-width: 709px;
   }
 
   .leave-application-image-form-container {
