@@ -22,8 +22,7 @@
     max-width: 335px;
 }
 
-.lesson:hover,
-.lesson:focus {
+.special {
     background-color: var(--primary-accent-color);
     p {
         color: var(--white-color);
@@ -57,6 +56,10 @@
 }
 
 .lesson-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -68,6 +71,22 @@
     border-radius: 12px;
     width: 295px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.special .lesson-button {
+    border: 1px solid var(--white-color);
+}
+
+.lesson-button:hover,
+.lesson-button:focus {
+    background-color: var(--primary-hoover-color);
+}
+
+.special:hover .lesson-button,
+.special:focus .lesson-button {
+    background-color: var(--white-color);
+    color: var(--primary-accent-color);
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -111,6 +130,9 @@
     }
 
     .lesson-button {
+        font-size: 18px;
+        line-height: 28px;
+        width: 306px;
         height: 60px;
         bottom: 32px;
     }
@@ -139,6 +161,7 @@
     }
 
     .lesson-button {
+        width: 256px;
         bottom: 32px;
     }
 
