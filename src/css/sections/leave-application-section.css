@@ -1,1 +1,341 @@
-/* leave-application-section styles */
+:root {
+  --title: #121417;
+  --underline: #bee8cc;
+  --input-border: rgba(18, 20, 23, 0.1);
+  --placeholder: rgba(18, 20, 23, 1);
+  --border-hover: rgba(77, 194, 116, 1);
+  --primary-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --font-color:rgba(255, 255, 255, 0.7);
+  --title-color:rgba(255, 255, 255, 1)
+}
+
+.leave-application-section{
+    margin-top: 150px;
+}
+
+.leave-application-hidden {
+  display: none;
+}
+
+.leave-application-container {
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.leave-application-title {
+  font-size: 32px;
+
+  color: var(--title);
+  text-align: center;
+  font-weight: 700;
+}
+
+.leave-application-description {
+  font-size: 14px;
+  line-height: 1, 74em;
+  letter-spacing: 0;
+  text-align: center;
+
+  margin-top: 14px;
+}
+
+.application {
+  position: relative;
+}
+
+.application::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  bottom: 0;
+  right: 0;
+  background: var(--underline);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.leave-application-label {
+  display: none;
+}
+
+.leave-application-image-form-container {
+  margin-top: 20px;
+}
+
+.leave-application-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.leave-application-input {
+  all: unset;
+  color: var(--placeholder);
+  box-sizing: border-box;
+  min-width: 335px;
+  height: 50px;
+  border: 1px solid var(--input-border);
+  border-radius: 12px;
+
+  transition: border var(--primary-transition);
+
+  padding: 16px 18px;
+}
+
+.leave-application-input::placeholder,
+.comment::placeholder {
+  color: var(--placeholder);
+}
+
+.leave-application-input:hover,
+.leave-application-input:focus {
+  border: 1px solid var(--border-hover);
+}
+.comment::placeholder {
+  color: var(--placeholder);
+}
+.comment {
+  min-height: 94px;
+}
+
+.leave-application-radio-container {
+  margin-top: 20px;
+}
+
+.leave-application-radio-title {
+  font-weight: 600;
+  color: var(--placeholder);
+  font-size: 18px;
+  line-height: 0.75em;
+}
+
+.leave-application-radio-label-radio-container {
+  margin-top: 14px;
+  color: var(--placeholder);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leave-application-radio-label-radio-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.radio {
+  all: unset;
+  position: relative;
+}
+
+.radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--input-border);
+  transition: border var(--primary-transition);
+
+  display: inline-block; /* Замість grid */
+  position: relative;
+}
+
+.radio::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity var(--primary-transition);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: inset 10px 10px var(--border-hover);
+}
+
+.radio:checked::before {
+  opacity: 1;
+}
+
+.radio:checked {
+  border: 2px solid var(--border-hover);
+}
+
+.leave-application-radio-label {
+  margin-left: 8px;
+}
+
+.leave-application-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 335px;
+  height: 52px;
+  margin-top: 40px;
+}
+
+.leave-application-privacy {
+  max-width: 335px;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 1.3em;
+
+  font-size: 12px;
+
+  margin-top: 16px;
+}
+
+/* ---------------------------TABLET SECTION-------------------------- */
+
+@media (min-width: 768px) {
+  .leave-application-container {
+    max-width: 586px;
+  }
+
+  .leave-application-image-form-container {
+    margin-top: 64px;
+  }
+
+  .leave-application-input::placeholder{
+    font-size: 16px;
+}
+
+  .leave-application-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+
+  .leave-application-description {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+
+  .leave-application-label {
+    font-size: 16px;
+  }
+
+  .leave-application-input {
+    min-width: 500px;
+  }
+
+  .leave-application-radio-title {
+    font-size: 20px;
+  }
+
+  .leave-application-radio-label-radio-container {
+    flex-direction: row;
+  }
+
+  .leave-application-container .leave-application-radio-container {
+    margin-right: auto;
+  }
+
+  .leave-application-button {
+    margin-top: 32px;
+    min-width: 500px;
+  }
+
+  .leave-application-privacy {
+    min-width: 500px;
+  }
+}
+/* -------------------------------DESKTOP SECTION-------------------------------- */
+@media (min-width: 1280px) {
+  .leave-application-container {
+    max-width: 1024px;
+  }
+
+  .leave-application-hidden-for-desktop{
+    display: none;
+  }
+  .leave-application-hidden {
+    display: block;
+  }
+  .leave-application-form {
+    margin-top: 0;
+  }
+  .leave-application-description {
+    max-width: 709px;
+  }
+
+  .leave-application-image-form-container {
+    margin-top: 64px;
+  }
+
+  .leave-application-image-form-container {
+    display: flex;
+
+    gap: 32px;
+
+  }
+
+  .leave-application-image-container {
+    width: 492px;
+    height: 578px;
+    background-color: var(--border-hover);
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .leave-application-image-title-description-container{
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .leave-application-image-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2em;
+    color:var(--title-color);
+  }
+
+  .leave-application-image-description{
+    font-size: 16px;
+    margin-top: 8px;
+    color:var(--font-color);
+  }
+
+  .leave-application-privacy{
+    font-size: 14px;
+  }
+
+  .leave-application-privacy{
+    height: 56px;
+  }
+
+  .comment{
+    min-height: 104px;
+  }
+
+  .leave-application-radio-container {
+    margin-top: 32px;
+}
+
+.leave-application-button {
+    height: 60px;
+}
+
+.leave-application-radio-label {
+    font-size: 18px;
+}
+
+
+
+.leave-application-radio-label-radio-container {
+    margin-top: 16px;
+}
+
+.leave-application-input {
+    height: 56px;
+}
+
+
+}

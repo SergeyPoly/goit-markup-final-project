@@ -1,5 +1,188 @@
 <section class="leave-application-section">
   <div class="container">
-    <!-- leave-application-section code -->
+    <div class="leave-application-container">
+      <h2 class="leave-application-title">
+        Leave an <span class="application">application</span>
+      </h2>
+      <p class="leave-application-description">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <div class="leave-application-image-form-container">
+        <div class="leave-application-image-container leave-application-hidden">
+          <img
+            srcset="
+              ../img/leave-an-application/girl-with-headphones@1x.png 1x,
+              ../img/leave-an-application/girl-with-headphones@2x.png        2x
+            "
+            src="../img/leave-an-application/girl-with-headphones@1x.png"
+            width="492"
+            alt="girl-with-headphones"
+          />
+          <div class="leave-application-image-title-description-container">
+            <h3 class="leave-application-image-title">1000</h3>
+            <p class="leave-application-image-description">
+              of our online English language lessons! This journey has been full
+              of discovery, growth and unforgettable moments, and we are happy
+              to share this joyful event with you.
+            </p>
+          </div>
+        </div>
+        <form class="leave-application-form">
+          <div class="leave-application-inputs-container">
+            <div class="leave-application-label-input-container">
+              <label
+                class="leave-application-label"
+                for="leave-application-user-name"
+                >Name</label
+              >
+              <input
+                id="leave-application-user-name"
+                class="leave-application-input"
+                name="leave-application-user-name"
+                type="text"
+                placeholder="Name"
+                required
+              />
+            </div>
+
+            <!----------------------------------------------------------------------------------->
+
+            <div class="leave-application-label-input-container">
+              <label
+                class="leave-application-label"
+                for="leave-application-user-email"
+                >Email</label
+              >
+              <input
+                id="leave-application-user-email"
+                class="leave-application-input"
+                name="leave-application-user-email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <!----------------------------------------------------------------------------------->
+
+            <div class="leave-application-label-input-container">
+              <label
+                class="leave-application-label"
+                for="leave-application-user-phone"
+                >Phone</label
+              >
+              <input
+                id="leave-application-user-phone"
+                class="leave-application-input"
+                name="leave-application-user-phone"
+                type="tel"
+                placeholder="Phone"
+                required
+              />
+            </div>
+
+            <!----------------------------------------------------------------------------------->
+
+            <div class="leave-application-comment-container">
+              <label class="leave-application-label" for="user-comment"
+                >Comment</label
+              >
+              <textarea
+                id="user-comment"
+                class="leave-application-input comment"
+                name="user-comment"
+                type="text"
+                placeholder="Comment"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="leave-application-radio-container">
+            <h3 class="leave-application-radio-title" for="user-choose-teacher">
+              Choose a teacher
+            </h3>
+            <div class="leave-application-radio-label-radio-container">
+              <div class="leave-application-radio-label-radio-item">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Maria"
+                  value="Maria"
+                  name="user-choose-teacher"
+                  required
+                />
+                <label class="leave-application-radio-label" for="Maria"
+                  >Maria</label
+                >
+              </div>
+
+              <!----------------------------------------------------------------------------------->
+
+              <div class="leave-application-radio-label-radio-item">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Artem"
+                  value="Artem"
+                  name="user-choose-teacher"
+                  required
+                />
+                <label class="leave-application-radio-label" for="Artem"
+                  >Artem</label
+                >
+              </div>
+
+              <!----------------------------------------------------------------------------------->
+
+              <div class="leave-application-radio-label-radio-item">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Ilona"
+                  value="Ilona"
+                  name="user-choose-teacher"
+                  required
+                />
+                <label class="leave-application-radio-label" for="Ilona"
+                  >Ilona</label
+                >
+              </div>
+
+              <!----------------------------------------------------------------------------------->
+
+              <div class="leave-application-radio-label-radio-item">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="Volodymyr"
+                  value="Volodymyr"
+                  name="user-choose-teacher"
+                  required
+                />
+                <label class="leave-application-radio-label" for="Volodymyr"
+                  >Volodymyr</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="leave-application-button button">
+            Send
+          </button>
+          <p class="leave-application-privacy leave-application-hidden">
+            By clicking on “Send” button, you agree to our Privacy Policy,<br />
+            and allow Promodo to use this information for marketing purposes.
+          </p>
+          <p
+            class="leave-application-privacy leave-application-hidden-for-desktop"
+          >
+            By clicking on “Send” button, you agree to our Privacy Policy, and
+            allow Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
