@@ -83,8 +83,8 @@
     background-color: var(--primary-hoover-color);
 }
 
-.special:hover .lesson-button,
-.special:focus .lesson-button {
+.special .lesson-button:hover,
+.special .lesson-button:focus {
     background-color: var(--white-color);
     color: var(--primary-accent-color);
 }
