@@ -1,1 +1,76 @@
-/* our-teachers-section styles */
+.team-description {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.team-card {
+  text-align: center;
+}
+.team-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+.team-member {
+  color: var(--black-color);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.team-text {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+  }
+  .team-upper::before {
+    bottom: 3px;
+    width: 170px;
+    height: 20px;
+  }
+  .team-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 64px;
+  }
+  .team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 272px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team-description {
+    width: 709px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .team-list {
+    width: 1024px;
+    flex-wrap: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .team-text {
+    width: 232px;
+  }
+  .team-item {
+    width: 232px;
+  }
+}
