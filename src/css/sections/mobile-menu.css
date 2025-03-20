@@ -8,7 +8,7 @@
 
   background-color: var(--mobile-menu-overlay-color);
   opacity: 0;
-  transition: opacity var(--primary-transition);
+  transition: opacity var(--modal-transition);
 }
 .mobile-menu-overlay.hidden {
   visibility: hidden;
@@ -34,7 +34,7 @@
   align-items: center;
 
   background-color: var(--primary-accent-color);
-  transition: transform var(--primary-transition);
+  transition: transform var(--modal-transition);
 }
 
 .mobile-menu-overlay.is-open .mobile-menu {
