@@ -14,8 +14,9 @@
   display: none;
 }
 
-.leave-application-image-form-container {
-  margin-top: 20px;
+.leave-application-container .section-description.with-offset {
+  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .leave-application-inputs-container {
@@ -28,7 +29,8 @@
   all: unset;
   color: var(--black-color);
   box-sizing: border-box;
-  min-width: 335px;
+  width: 100%;
+  max-width: 335px;
   height: 50px;
   border: 1px solid var(--input-border-color);
   border-radius: 12px;
@@ -124,7 +126,8 @@
 .leave-application-button {
   display: block;
   margin: 0 auto;
-  min-width: 335px;
+  width: 100%;
+  max-width: 335px;
   height: 52px;
   margin-top: 40px;
 }
@@ -147,12 +150,13 @@
     max-width: 586px;
   }
 
-  .leave-application-image-form-container {
-    margin-top: 64px;
-  }
-
   .leave-application-input::placeholder {
     font-size: 16px;
+  }
+
+  .leave-application-container .section-description.with-offset {
+    margin-bottom: 0;
+    margin-bottom: 64px;
   }
 
   .leave-application-form {
@@ -184,7 +188,7 @@
 
   .leave-application-button {
     margin-top: 32px;
-    min-width: 500px;
+    max-width: 500px;
   }
 
   .leave-application-privacy {
@@ -209,10 +213,6 @@
   }
 
   .leave-application-image-form-container {
-    margin-top: 64px;
-  }
-
-  .leave-application-image-form-container {
     display: flex;
 
     gap: 32px;
@@ -228,8 +228,7 @@
 
   .leave-application-image-title-description-container {
     text-align: center;
-    margin-top: 20px;
-    padding: 0 20px;
+    padding: 20px 20px 40px 20px;
   }
 
   .leave-application-image-title {
