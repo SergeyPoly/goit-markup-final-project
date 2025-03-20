@@ -1,1 +1,224 @@
 /* footer styles */
+
+.footer {
+  background-color: var(--black-color);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer__logo {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--white-color);
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: opacity var(--primary-transition);
+}
+
+.footer__logo:hover,
+.footer__logo:focus {
+  opacity: 0.8;
+}
+
+.footer__logo-text {
+  color: var(--primary-accent-color);
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer__address--wrapper:first-child {
+  margin-bottom: 16px;
+}
+
+.footer__address-label {
+  color: var(--helper-text-color);
+  margin-bottom: 4px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.footer__address-text {
+  color: var(--white-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  position: relative;
+  transition: color var(--primary-transition);
+}
+
+.footer__address-text:hover,
+.footer__address-text:focus {
+  color: var(--primary-accent-color);
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__menu-link {
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  position: relative;
+  transition: color var(--primary-transition);
+}
+
+.footer__menu-link:hover,
+.footer__menu-link:focus {
+  color: var(--primary-accent-color);
+}
+
+.link-decorator::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% + 14px);
+  transform: translateY(50%);
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-accent-color);
+  transition: width var(--primary-transition);
+}
+
+.link-decorator:hover::after,
+.link-decorator:focus::after {
+  width: 37px;
+}
+
+.footer__social-title {
+  color: var(--white-color);
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--white-10);
+  transition: var(--primary-transition);
+  will-change: transform;
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {
+  border: 1px solid rgba(77, 194, 116, 0.1);
+  transform: translateY(-2px);
+}
+
+.footer__social-icon {
+  fill: var(--white-color);
+  transition: var(--primary-transition);
+}
+
+.footer__social-link:hover .footer__social-icon,
+.footer__social-link:focus .footer__social-icon {
+  fill: var(--primary-accent-color);
+}
+
+.footer__copyright-text {
+  color: var(--helper-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.footer__copyright-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer__copyright-link {
+  color: var(--helper-text-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  transition: color var(--primary-transition);
+}
+
+.footer__copyright-link:hover,
+.footer__copyright-link:focus {
+  color: var(--secondary-hover-color);
+}
+
+.delimiter {
+  height: 1px;
+  background: var(--delimiter-color);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 32px;
+  }
+
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__copyright-text {
+    margin-bottom: 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 32px;
+  }
+
+  .footer__content {
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 64px;
+  }
+
+  .footer__content {
+    margin-bottom: 64px;
+  }
+}
