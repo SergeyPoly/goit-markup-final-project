@@ -35,7 +35,7 @@
     }
 
     @media only screen and (min-width: 1280px) {
-        width: 1024px;
+        width: 1152px;
         padding: 164px 524px 163px 64px;
         background-image: url('../../img/hero-img/blockdesk.jpg');
 
@@ -56,7 +56,6 @@
     color: var(--white-color);
 
     @media only screen and (min-width: 768px) {
-        margin-left: 32px;
         margin-bottom: 32px;
         max-width: 488px;
         font-weight: 700;
@@ -65,7 +64,6 @@
     }
 
     @media only screen and (min-width: 1280px) {
-        margin-left: 64px;
         max-width: 564px;
     }
 }
@@ -82,7 +80,6 @@
     line-height: 1.7;
 
     @media only screen and (min-width: 768px) {
-        margin-left: 32px;
         padding: 16px 64px;
         max-width: 306px;
         line-height: 1.56;
@@ -95,10 +92,10 @@
 
 .arrow-down-scroll {
     position: absolute;
-    bottom: 32px;
-    right: 32px;
-    width: 48px;
-    height: 48px;
+    bottom: 14px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,6 +104,13 @@
     background-color: var(--white-color);
     transition: var(--primary-transition);
     transition-property: background-color;
+
+    @media only screen and (min-width: 768px) {
+        bottom: 32px;
+        right: 32px;
+        width: 48px;
+        height: 48px;
+    }
 }
 
 .arrow-down-scroll:hover,
