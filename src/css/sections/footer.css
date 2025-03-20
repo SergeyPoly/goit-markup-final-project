@@ -1,9 +1,11 @@
-/* footer styles */
-
 .footer {
   background-color: var(--black-color);
   padding-top: 40px;
   padding-bottom: 20px;
+}
+
+.footer__container {
+  max-width: 335px;
 }
 
 .footer__content {
@@ -187,6 +189,10 @@
     padding-top: 32px;
   }
 
+  .footer__container {
+    max-width: 704px;
+  }
+
   .footer__content {
     flex-direction: row;
     justify-content: space-between;
@@ -216,6 +222,10 @@
 @media screen and (min-width: 1280px) {
   .footer {
     padding-top: 64px;
+  }
+
+  .footer__container {
+    max-width: 1024px;
   }
 
   .footer__content {
