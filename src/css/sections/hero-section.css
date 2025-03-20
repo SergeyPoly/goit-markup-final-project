@@ -1,1 +1,128 @@
 /* hero-section styles */
+
+.hero-section .container {
+    margin-bottom: 96px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    padding: 164px 0;
+
+    background-color: var(--secondary-background-color);
+    /* TODO background-image -> center */
+    background-image: url('../../img/block.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* TODO mobile: верстка гумова від 320px, стає адаптивною з 375px; */
+    @media only screen and (min-width: 375px) {
+        display: block;
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: block;
+    }
+
+    /* @media only screen and (min-width: 1280px) {
+        } */
+}
+
+.hero-section .rounded {
+    /* TODO: write in % ? */
+    border-radius: 30px;
+}
+
+.hero-title {
+    margin-bottom: 40px;
+    max-width: 295px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: 0%;
+    color: var(--white-color);
+
+    @media only screen and (min-width: 768px) {
+        margin-left: 32px;
+        margin-bottom: 32px;
+        max-width: 488px;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.16;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        margin-left: 64px;
+        max-width: 564px;
+    }
+}
+
+.hero-span {
+    color: var(--secondary-accent-color);
+}
+
+.hero-btn {
+    padding: 14px 78px;
+    max-width: 295px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0%;
+    color: var(--white-color);
+    background-color: var(--primary-accent-color);
+    border: none;
+    border-radius: 12px;
+
+    @media only screen and (min-width: 768px) {
+        margin-left: 32px;
+        padding: 16px 64px;
+        max-width: 306px;
+        font-size: 18px;
+        line-height: 1.56;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        margin-left: 64px;
+    }
+}
+
+.arrow-down-btn {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    transition: var(--primary-transition);
+    transition-property: background-color;
+}
+
+.arrow-down-btn:hover,
+.arrow-down-btn:focus {
+    background-color: var(--primary-accent-color);
+    border: none;
+    fill: var(--white-color);
+}
+
+/* TODO fill: white arrow-icon hover, focus */
+.arrow-down-btn:hover .arrow-icon,
+.arrow-down-btn:focus .arrow-icon {
+    background-color: var(--primary-accent-color);
+    fill: var(--white-color);
+}
+
+.arrow-icon {
+    background-color: var(--white-color);
+    transition: var(--primary-transition);
+    transition-property: fill;
+}
