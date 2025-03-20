@@ -26,7 +26,7 @@
 
   padding: 20px;
   width: 65%;
-  height: 100vh;
+  height: 100dvh;
 
   display: flex;
   flex-direction: column;
@@ -35,6 +35,18 @@
 
   background-color: var(--primary-accent-color);
   transition: transform var(--modal-transition);
+}
+
+@supports (height: 100dvh) {
+  .mobile-menu {
+    height: 100dvh;
+  }
+}
+
+@supports not (height: 100dvh) {
+  .mobile-menu {
+    height: 100vh;
+  }
 }
 
 .mobile-menu-overlay.is-open .mobile-menu {
