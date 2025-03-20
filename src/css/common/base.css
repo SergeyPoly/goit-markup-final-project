@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font);
   font-size: 14px;
   line-height: 24px;
   color: var(--primary-text-color);
   background-color: var(--white-color);
+  letter-spacing: -0.02em;
 }
 
 .section-title {
