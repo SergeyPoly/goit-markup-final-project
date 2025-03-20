@@ -11,6 +11,11 @@ body {
   letter-spacing: -0.02em;
 }
 
+body.modal-open {
+  overflow: hidden;
+  margin-right: var(--scrollbar-width, 0px);
+}
+
 .section-title {
   color: var(--black-color);
   font-size: 32px;
@@ -56,6 +61,7 @@ body {
 
 .section {
   padding: 0 20px;
+  scroll-margin-top: 32px;
 }
 
 .section.with-offset {
@@ -149,6 +155,7 @@ body {
 
   .section {
     padding: 0 64px;
+    scroll-margin-top: 64px;
   }
 
   .section.with-offset {
