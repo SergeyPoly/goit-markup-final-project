@@ -14,12 +14,12 @@
 }
 
 .lesson {
-    position: relative;
     text-align: center;
     border: 1px solid var(--primary-accent-color);
     border-radius: 16px;
     min-height: 400px;
-    max-width: 335px;
+    max-width: 336px;
+    padding: 40px 20px;
 }
 
 .special {
@@ -37,9 +37,7 @@
     font-size: 20px;
     font-weight: bold;
     color: var(--black-color);
-    line-height: 24px;
-    letter-spacing: -2%;
-    margin: 40px 0px 16px 0px;
+    margin-bottom: 16px;
 }
 
 .lesson-price {
@@ -52,29 +50,22 @@
 
 .lesson-description {
     text-align: center;
-    margin: 0px 20px;
+    min-height: 132px;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .lesson-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 52px;
+    display: block;
+    padding: 14px 0;
     background-color: var(--primary-accent-color);
     color: var(--white-color);
-    border: none;
     border-radius: 12px;
-    width: 295px;
-    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .special .lesson-button {
+    padding: 13px 0;
     border: 1px solid var(--white-color);
 }
 
@@ -90,9 +81,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
+    
+    .lesson {
+        width: 100%;
+    }
 
     .lesson-button {
-        width: calc(100% - 30px);
+        width: 100%;
     }
 
 }
@@ -106,15 +101,15 @@
     }
 
     .lesson {
-        max-width: 336px;
-        min-height: 404px;
+        max-height: 404px;
         border-radius: 30px;
+        padding: 32px 16px;
     }
 
     .lesson-header {
         font-size: 20px;
         line-height: 24px;
-        margin: 32px 0 16px 0;
+        margin-bottom: 16px;
     }
 
     .lesson-price {
@@ -126,15 +121,17 @@
     .lesson-description {
         font-size: 16px;
         line-height: 24px;
-        margin: 0 16px 0 16px;
+        margin-bottom: 32px;
     }
 
     .lesson-button {
+        padding: 16px 63px;
         font-size: 18px;
         line-height: 28px;
-        width: 306px;
-        height: 60px;
-        bottom: 32px;
+    }
+
+    .special .lesson-button {
+        padding: 15px 63px;
     }
 
 }
@@ -145,11 +142,8 @@
     }
 
     .lesson {
+        padding: 32px;
         max-width: 320px;
-    }
-
-    .lesson-header {
-        margin: 32px 0px 16px 0px;
     }
 
     .lesson-price {
@@ -157,12 +151,16 @@
     }
 
     .lesson-description {
-        margin: 0 32px;
+        margin-bottom: 32px;
     }
 
     .lesson-button {
-        width: 256px;
-        bottom: 32px;
+        font-size: 18px;
+        padding: 16px 39px;
+    }
+
+    .special .lesson-button {
+        padding: 15px 39px;
     }
 
 }
