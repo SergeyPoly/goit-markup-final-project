@@ -1,4 +1,6 @@
-/* reviews-section styles */
+.reviews-section {
+  padding-bottom: 80px;
+}
 
 .reviews-section .container {
   display: flex;
@@ -17,7 +19,6 @@
   border-radius: var(--card-border-radius);
   padding: 32px 16px 40px;
   flex: 1;
-  max-width: 335px;
   display: none;
 }
 
@@ -47,7 +48,7 @@
 .reviewer-name {
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
 }
 
 .reviewer-position {
@@ -63,8 +64,8 @@
 }
 
 @media (min-width: 768px) {
-  .review-card {
-    max-width: 336px;
+  .reviews-section {
+    padding-bottom: 100px;
   }
 
   .review-card:nth-child(2) {
@@ -77,6 +78,10 @@
 }
 
 @media (min-width: 1280px) {
+  .reviews-section {
+    padding-bottom: 150px;
+  }
+
   .review-card:last-child {
     display: block;
   }

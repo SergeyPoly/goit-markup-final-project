@@ -1,15 +1,12 @@
-/* our-lessons-section styles */
-
 .our-lessons-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .lessons-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -81,7 +78,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-    
     .lesson {
         width: 100%;
     }
@@ -94,8 +90,6 @@
 
 @media screen and (min-width: 768px) {
     .lessons-list {
-        flex-direction: row;
-        flex-wrap: wrap;
         max-width: calc(336px * 2 + 32px);
         gap: 32px;
     }
