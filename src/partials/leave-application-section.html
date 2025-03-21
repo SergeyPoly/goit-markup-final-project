@@ -1,7 +1,4 @@
-<section
-  class="leave-application-section with-offset section"
-  id="leave-application"
->
+<section class="leave-application-section section" id="leave-application">
   <div class="container">
     <div class="leave-application-container">
       <h2 class="section-title with-offset">
@@ -45,6 +42,7 @@
                 name="leave-application-user-name"
                 type="text"
                 placeholder="Name"
+                pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ ]{2,50}$"
                 required
               />
             </div>
@@ -63,6 +61,7 @@
                 name="leave-application-user-email"
                 type="email"
                 placeholder="Email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                 required
               />
             </div>
@@ -81,6 +80,7 @@
                 name="leave-application-user-phone"
                 type="tel"
                 placeholder="Phone"
+                pattern="^\+?[0-9]{7,15}$"
                 required
               />
             </div>
@@ -96,7 +96,6 @@
                 class="leave-application-input comment"
                 name="user-comment"
                 placeholder="Comment"
-                required
               ></textarea>
             </div>
           </div>
@@ -171,6 +170,7 @@
           <button type="submit" class="leave-application-button button">
             Send
           </button>
+<!--          TODO навіщо знадобилось два окремих ідентичних текста під кнопкою??-->
           <p class="leave-application-privacy leave-application-hidden">
             By clicking on “Send” button, you agree to our Privacy Policy,<br />
             and allow Promodo to use this information for marketing purposes.

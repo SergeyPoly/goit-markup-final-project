@@ -3,10 +3,8 @@
 }
 
 .header-container {
-  max-width: 335px;
-  width: 100%;
+  /*TODO є сенс змінити підхід на паддінги замість вказання чіткої висоти*/
   height: 67px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +97,7 @@
 
 @media (min-width: 768px) {
   .header-container {
-    max-width: 704px;
+    /*TODO є сенс змінити підхід на паддінги замість вказання чіткої висоти*/
     height: 68px;
   }
   .burger-icon {
@@ -110,7 +108,7 @@
 
 @media (min-width: 1280px) {
   .header-container {
-    max-width: 1024px;
+    /*TODO є сенс змінити підхід на паддінги замість вказання чіткої висоти*/
     height: 84px;
   }
   .nav-list {

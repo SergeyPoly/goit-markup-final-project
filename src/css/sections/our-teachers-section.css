@@ -1,9 +1,7 @@
-.teachers-container {
-  max-width: 335px;
+.our-teachers-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
 .team-description {
@@ -43,8 +41,8 @@
   letter-spacing: normal;
 }
 @media screen and (min-width: 768px) {
-  .teachers-container {
-    max-width: 704px;
+  .team-card {
+    width: 272px;
   }
 
   .team-list {
@@ -53,11 +51,13 @@
     gap: 32px;
     justify-content: center;
   }
+
   .team-upper::before {
     bottom: 3px;
     width: 170px;
     height: 20px;
   }
+
   .team-description {
     font-size: 18px;
     line-height: 1.6;
@@ -66,13 +66,14 @@
   .team-text {
     font-size: 16px;
     line-height: 1.5;
-    width: 272px;
   }
 }
+
 @media screen and (min-width: 1280px) {
-  .teachers-container {
-    max-width: 1024px;
+  .team-card {
+    width: 232px;
   }
+
   .team-description {
     width: 709px;
     margin-right: auto;
@@ -83,11 +84,5 @@
     flex-wrap: nowrap;
     margin-right: auto;
     margin-left: auto;
-  }
-  .team-text {
-    width: 232px;
-  }
-  .team-item {
-    width: 232px;
   }
 }

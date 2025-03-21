@@ -16,6 +16,16 @@ body.modal-open {
   margin-right: var(--scrollbar-width, 0px);
 }
 
+.section {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .section-title {
   color: var(--black-color);
   font-size: 32px;
@@ -59,24 +69,6 @@ body.modal-open {
   z-index: -1;
 }
 
-.section {
-  padding: 0 20px;
-  scroll-margin-top: 32px;
-}
-
-.section.with-offset {
-  margin-bottom: 80px;
-}
-
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.container.wide {
-  max-width: 1152px;
-}
-
 .button {
   border: none;
   background-color: var(--primary-accent-color);
@@ -110,6 +102,16 @@ body.modal-open {
 }
 
 @media (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .container {
+    max-width: unset;
+    width: 768px;
+    padding: 0 32px;
+  }
+
   .section-title {
     font-size: 40px;
     line-height: 48px;
@@ -117,7 +119,7 @@ body.modal-open {
 
   .rectangle::after {
     height: 16px;
-    bottom: 0px;
+    bottom: 0;
   }
 
   .section-description {
@@ -128,14 +130,6 @@ body.modal-open {
 
   .section-description.with-offset {
     margin-bottom: 64px;
-  }
-
-  .section {
-    padding: 0 32px;
-  }
-
-  .section.with-offset {
-    margin-bottom: 100px;
   }
 
   .button {
@@ -149,16 +143,20 @@ body.modal-open {
 }
 
 @media (min-width: 1280px) {
+  .section {
+    padding: 75px 0;
+  }
+
+  .container {
+    width: 1280px;
+    padding: 0 128px;
+  }
+
+  .container.wide {
+    padding: 0 64px;
+  }
+
   .rectangle::after {
     height: 20px;
-  }
-
-  .section {
-    padding: 0 64px;
-    scroll-margin-top: 64px;
-  }
-
-  .section.with-offset {
-    margin-bottom: 150px;
   }
 }
