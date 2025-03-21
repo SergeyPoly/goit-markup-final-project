@@ -112,11 +112,7 @@
 }
 
 @media (min-width: 768px) {
-  .proposal-section {
-    max-width: 768px;
-  }
-
-  .proposal-section .container {
+  .proposal-content {
     padding: 64px 18px 93px 18px;
     overflow: visible;
   }
