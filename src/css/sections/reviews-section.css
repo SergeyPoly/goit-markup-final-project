@@ -60,7 +60,7 @@
 .review-text {
   font-size: 14px;
   line-height: 24px;
-  margin: 16px 16px 0;
+  margin: 32px 16px 0;
 }
 
 @media (min-width: 768px) {
