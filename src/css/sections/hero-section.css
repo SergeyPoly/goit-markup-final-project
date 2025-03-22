@@ -131,3 +131,53 @@
     transition-property: fill;
 }
 
+
+
+
+
+
+
+.arrow-top-scroll {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    transition: var(--primary-transition);
+    transition-property: background-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    @media only screen and (min-width: 768px) {
+        bottom: 32px;
+        right: 32px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.arrow-top-scroll:hover,
+.arrow-top-scroll:focus {
+    background-color: var(--primary-accent-color);
+    border: none;
+    fill: var(--white-color);
+}
+
+.arrow-top-scroll:hover .arrow-icon,
+.arrow-top-scroll:focus .arrow-icon {
+    fill: var(--white-color);
+}
+
+.arrow-icon-top {
+    transform:rotate(180deg);
+    fill: var(--primary-accent-color);
+    transition: var(--primary-transition);
+    transition-property: fill;
+}
+
+
