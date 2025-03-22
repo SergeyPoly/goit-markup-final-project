@@ -3,7 +3,6 @@
 }
 
 .header-container {
-  /*TODO є сенс змінити підхід на паддінги замість вказання чіткої висоти*/
   height: 67px;
   display: flex;
   justify-content: space-between;
@@ -15,6 +14,7 @@
   color: var(--black-color);
   font-size: 1.25rem;
   font-weight: 700;
+  letter-spacing: 0em;
 }
 .nav-logo-span {
   color: var(--primary-accent-color);
@@ -50,11 +50,9 @@
   width: 37px;
 }
 .nav-link.active::after {
-  .nav-link::after {
-    width: 37px;
-    background-color: var(--primary-accent-color);
-    transition: none;
-  }
+  width: 100%;
+  background-color: var(--primary-accent-color);
+  transition: none;
 }
 
 .nav-social {
