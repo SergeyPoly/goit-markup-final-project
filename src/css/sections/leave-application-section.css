@@ -43,15 +43,32 @@
   color: var(--black-color);
 }
 
-.leave-application-input:hover,
-.leave-application-input:focus {
-  border: 1px solid var(--primary-accent-color);
-}
 .comment::placeholder {
   color: var(--black-color);
 }
 .comment {
   min-height: 94px;
+}
+
+.leave-application-input:placeholder-shown {
+  border-color: var(--input-border-color);
+}
+
+.leave-application-input:hover,
+.leave-application-input:focus {
+  border-color: var(--primary-accent-color);
+}
+
+.leave-application-input:not(textarea):valid:not(:focus) {
+  border-color: var(--input-border-color);
+}
+
+.leave-application-input:hover:not(textarea):valid:not(:focus) {
+  border-color: var(--primary-accent-color);
+}
+
+.leave-application-input:not(textarea):not(:placeholder-shown):invalid:not(:focus) {
+  border-color: var(--error-color);
 }
 
 .leave-application-radio-container {

@@ -24,4 +24,6 @@
   --helper-text-color: var(--white-60);
   --delimiter-color: var(--white-10);
   --secondary-hover-color: var(--primary-background-color);
+
+  --error-color: #ae3838;
 }
