@@ -30,74 +30,48 @@
         </div>
         <form class="leave-application-form">
           <div class="leave-application-inputs-container">
-            <div class="leave-application-label-input-container">
-              <label
-                class="leave-application-label"
-                for="leave-application-user-name"
-                >Name</label
-              >
-              <input
-                id="leave-application-user-name"
-                class="leave-application-input"
-                name="leave-application-user-name"
-                type="text"
-                placeholder="Name"
-                pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ ]{2,50}$"
-                required
-              />
-            </div>
+            <input
+              id="leave-application-user-name"
+              class="leave-application-input"
+              name="leave-application-user-name"
+              type="text"
+              placeholder="Name"
+              pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ ]{2,50}$"
+              required
+            />
 
             <!----------------------------------------------------------------------------------->
 
-            <div class="leave-application-label-input-container">
-              <label
-                class="leave-application-label"
-                for="leave-application-user-email"
-                >Email</label
-              >
-              <input
-                id="leave-application-user-email"
-                class="leave-application-input"
-                name="leave-application-user-email"
-                type="email"
-                placeholder="Email"
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                required
-              />
-            </div>
+            <input
+              id="leave-application-user-email"
+              class="leave-application-input"
+              name="leave-application-user-email"
+              type="email"
+              placeholder="Email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              required
+            />
 
             <!----------------------------------------------------------------------------------->
 
-            <div class="leave-application-label-input-container">
-              <label
-                class="leave-application-label"
-                for="leave-application-user-phone"
-                >Phone</label
-              >
-              <input
-                id="leave-application-user-phone"
-                class="leave-application-input"
-                name="leave-application-user-phone"
-                type="tel"
-                placeholder="Phone"
-                pattern="^\+?[0-9]{7,15}$"
-                required
-              />
-            </div>
+            <input
+              id="leave-application-user-phone"
+              class="leave-application-input"
+              name="leave-application-user-phone"
+              type="tel"
+              placeholder="Phone"
+              pattern="^\+?[0-9]{7,15}$"
+              required
+            />
 
             <!----------------------------------------------------------------------------------->
 
-            <div class="leave-application-comment-container">
-              <label class="leave-application-label" for="user-comment"
-                >Comment</label
-              >
-              <textarea
-                id="user-comment"
-                class="leave-application-input comment"
-                name="user-comment"
-                placeholder="Comment"
-              ></textarea>
-            </div>
+            <textarea
+              id="user-comment"
+              class="leave-application-input comment"
+              name="user-comment"
+              placeholder="Comment"
+            ></textarea>
           </div>
 
           <div class="leave-application-radio-container">
@@ -170,10 +144,10 @@
           <button type="submit" class="leave-application-button button">
             Send
           </button>
-          <!--          TODO навіщо знадобилось два окремих ідентичних текста під кнопкою??-->
           <p class="leave-application-privacy">
             By clicking on “Send” button, you agree to our
-            <a href="#" class="leave-application-privacy-link">Privacy Policy</a>,<br />
+            <a href="#" class="leave-application-privacy-link">Privacy Policy</a
+            >,<br />
             and allow Promodo to use this information for marketing purposes.
           </p>
         </form>
