@@ -14,8 +14,9 @@
   color: var(--black-color);
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
+
 .nav-logo-span {
   color: var(--primary-accent-color);
 }
@@ -34,6 +35,7 @@
   font-weight: 600;
   line-height: 1.28571;
 }
+
 .nav-link::after {
   content: "";
   position: absolute;
@@ -46,9 +48,11 @@
   background-color: var(--primary-accent-color);
   transition: width var(--primary-transition);
 }
+
 .nav-link:hover::after {
   width: 37px;
 }
+
 .nav-link.active::after {
   width: 100%;
   background-color: var(--primary-accent-color);
@@ -72,6 +76,7 @@
   border-radius: 10px;
   transition: var(--primary-transition);
 }
+
 .social-link:hover {
   border: 1px solid rgba(77, 194, 116, 0.1);
 }
@@ -80,6 +85,7 @@
   fill: var(--black-color);
   transition: var(--primary-transition);
 }
+
 .social-link:hover .social-logo-icon {
   fill: var(--primary-accent-color)
 }
@@ -95,7 +101,6 @@
 
 @media (min-width: 768px) {
   .header-container {
-    /*TODO є сенс змінити підхід на паддінги замість вказання чіткої висоти*/
     height: 68px;
   }
   .burger-icon {
@@ -106,7 +111,6 @@
 
 @media (min-width: 1280px) {
   .header-container {
-    /*TODO є сенс змінити підхід на паддінги замість вказання чіткої висоти*/
     height: 84px;
   }
   .nav-list {

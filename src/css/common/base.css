@@ -77,6 +77,7 @@ body.modal-open {
   font-weight: 700;
   border-radius: 12px;
   transition: background-color var(--primary-transition);
+  letter-spacing: 0;
 }
 
 .button:hover,
@@ -122,6 +123,11 @@ body.modal-open {
     bottom: 0;
   }
 
+  .button {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   .section-description {
     font-size: 18px;
     line-height: 30px;
@@ -130,11 +136,6 @@ body.modal-open {
 
   .section-description.with-offset {
     margin-bottom: 64px;
-  }
-
-  .button {
-    font-size: 18px;
-    line-height: 28px;
   }
 
   .rounded {

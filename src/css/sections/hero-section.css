@@ -1,4 +1,3 @@
-/* hero-section styles */
 .hero-section {
   padding: 8px 0 40px;
 
@@ -11,12 +10,11 @@
   }
 }
 
-.hero {
+.hero-content {
   margin: 0 auto;
   position: relative;
   padding: 425px 20px 72px;
   max-width: 335px;
-
   background-color: var(--secondary-background-color);
   background-image: url('../../img/hero-img/blockmob.jpg');
   background-repeat: no-repeat;
@@ -34,24 +32,20 @@
     width: 704px;
     padding: 260px 184px 295px 32px;
     background-image: url('../../img/hero-img/blocktabl.jpg');
+  }
 
-    @media (min-resolution: 192dpi) {
-      .box {
-        background-image: url('../../img/hero-img/blocktabl@2x.jpg');
-      }
-    }
+  @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    background-image: url('../../img/hero-img/blocktabl@2x.jpg');
   }
 
   @media only screen and (min-width: 1280px) {
     width: 1152px;
     padding: 164px 524px 163px 64px;
     background-image: url('../../img/hero-img/blockdesk.jpg');
+  }
 
-    @media (min-resolution: 192dpi) {
-      .box {
-        background-image: url('../../img/hero-img/blockdesk@2x.jpg');
-      }
-    }
+  @media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    background-image: url('../../img/hero-img/blockdesk@2x.jpg');
   }
 }
 
@@ -80,21 +74,14 @@
   color: var(--secondary-accent-color);
 }
 
-.leave-appl {
-  display: inline-block;
-  padding: 14px 78px;
-  max-width: 295px;
+.leave-app-btn {
+  display: block;
+  padding: 14px 0;
   text-align: center;
-  line-height: 1.7;
 
   @media only screen and (min-width: 768px) {
-    padding: 16px 64px;
-    max-width: 306px;
-    line-height: 1.56;
-  }
-
-  @media only screen and (min-width: 1280px) {
-    /* margin-left: 64px; */
+    padding: 16px 0;
+    width: 306px;
   }
 }
 

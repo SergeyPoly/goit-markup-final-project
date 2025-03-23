@@ -1,160 +1,111 @@
-.our-lessons-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.our-lessons-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lessons-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.lesson {
-    text-align: center;
-    border: 1px solid var(--primary-accent-color);
-    border-radius: 16px;
-    min-height: 400px;
-    max-width: 336px;
-    padding: 40px 20px;
+.lesson-item {
+  text-align: center;
+  border: 1px solid var(--primary-accent-color);
+  padding: 40px 20px;
 }
 
-.special {
-    background-color: var(--primary-accent-color);
-    p {
-        color: var(--white-color);
-    }
-    button {
-        border: 1px solid var(--white-color);
-        background-color: rgba(var(--primary-accent-color), 0.4);
-    }
+.lesson-item.special {
+  background-color: var(--primary-accent-color);
 }
 
-.lesson-header {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--black-color);
-    margin-bottom: 16px;
+.lesson-title {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  color: var(--black-color);
+  margin-bottom: 16px;
 }
 
 .lesson-price {
-    font-size: 32px;
-    font-weight: bold;
-    color: var(--black-color);
-    line-height: 36px;
-    margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+  color: var(--black-color);
+  margin-bottom: 40px;
+}
+
+.special .lesson-title, .special .lesson-price {
+  color: var(--white-color);
 }
 
 .lesson-description {
-    text-align: center;
-    min-height: 132px;
-    margin-bottom: 20px;
-    font-weight: 400;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.special .lesson-description {
+  color: var(--white-70)
 }
 
 .lesson-button {
-    display: block;
-    padding: 14px 0;
-    background-color: var(--primary-accent-color);
-    color: var(--white-color);
-    border-radius: 12px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+  padding: 14px 0;
 }
 
 .special .lesson-button {
-    padding: 13px 0;
-    border: 1px solid var(--white-color);
-}
-
-.lesson-button:hover,
-.lesson-button:focus {
-    background-color: var(--primary-hoover-color);
+  background-color: transparent;
+  color: var(--white-color);
+  padding: 13px 0;
+  border: 1px solid var(--white-color);
 }
 
 .special .lesson-button:hover,
 .special .lesson-button:focus {
-    background-color: var(--white-color);
-    color: var(--primary-accent-color);
-}
-
-@media (min-width: 320px) and (max-width: 374px) {
-    .lesson {
-        width: 100%;
-    }
-
-    .lesson-button {
-        width: 100%;
-    }
-
+  background-color: var(--white-color);
+  color: var(--primary-accent-color);
 }
 
 @media screen and (min-width: 768px) {
-    .lessons-list {
-        max-width: calc(336px * 2 + 32px);
-        gap: 32px;
-    }
+  .lessons-list {
+    gap: 32px;
+  }
 
-    .lesson {
-        max-height: 404px;
-        border-radius: 30px;
-        padding: 32px 16px;
-    }
+  .lesson-item {
+    width: 336px;
+    padding: 32px 16px;
+  }
 
-    .lesson-header {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 16px;
-    }
+  .lesson-price {
+    line-height: 44px;
+    margin-bottom: 32px;
+  }
 
-    .lesson-price {
-        font-size: 32px;
-        line-height: 44px;
-        margin-bottom: 32px;
-    }
+  .lesson-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
 
-    .lesson-description {
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 32px;
-    }
+  .lesson-button {
+    padding: 16px 0;
+  }
 
-    .lesson-button {
-        padding: 16px 63px;
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .special .lesson-button {
-        padding: 15px 63px;
-    }
-
+  .special .lesson-button {
+    padding: 15px 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .lessons-list {
-        max-width: unset;
-    }
+  .lesson-item {
+    padding: 32px;
+    width: 320px;
+  }
 
-    .lesson {
-        padding: 32px;
-        max-width: 320px;
-    }
-
-    .lesson-price {
-        margin-bottom: 16px;
-    }
-
-    .lesson-description {
-        margin-bottom: 32px;
-    }
-
-    .lesson-button {
-        font-size: 18px;
-        padding: 16px 39px;
-    }
-
-    .special .lesson-button {
-        padding: 15px 39px;
-    }
-
+  .lesson-price {
+    margin-bottom: 16px;
+  }
 }
