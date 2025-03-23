@@ -1,157 +1,147 @@
 <section class="leave-application-section section" id="leave-application">
   <div class="container">
-    <div class="leave-application-container">
-      <h2 class="section-title with-offset">
-        Leave an <span class="rectangle">application</span>
-      </h2>
-      <p class="section-description with-offset">
-        Please use the form below to contact us. Enter your name, email, and
-        message and we'll get back to you shortly.
-      </p>
-      <div class="leave-application-image-form-container">
-        <div class="leave-application-image-container leave-application-hidden">
-          <img
-            srcset="
+    <h2 class="section-title with-offset">
+      Leave an <span class="rectangle">application</span>
+    </h2>
+    <p class="section-description with-offset">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="leave-application-image-form-container">
+      <div class="leave-application-image-container">
+        <img
+          srcset="
               ./img/girl-with-headphones.webp    1x,
               ./img/girl-with-headphones@2x.webp 2x
             "
-            src="./img/girl-with-headphones.webp"
-            width="492"
-            alt="girl-with-headphones"
-          />
-          <div class="leave-application-image-title-description-container">
-            <h3 class="leave-application-image-title">1000</h3>
-            <p class="leave-application-image-description">
-              of our online English language lessons! This journey has been full
-              of discovery, growth and unforgettable moments, and we are happy
-              to share this joyful event with you.
-            </p>
-          </div>
+          src="./img/girl-with-headphones.webp"
+          width="492"
+          alt="girl-with-headphones"
+        />
+        <div class="leave-application-image-title-description-container">
+          <h3 class="leave-application-image-title">1000</h3>
+          <p class="leave-application-image-description">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy
+            to share this joyful event with you.
+          </p>
         </div>
-        <form class="leave-application-form">
-          <div class="leave-application-inputs-container">
-            <input
-              id="leave-application-user-name"
-              class="leave-application-input"
-              name="leave-application-user-name"
-              type="text"
-              placeholder="Name"
-              pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ ]{2,50}$"
-              required
-            />
+      </div>
+      <form class="leave-application-form">
+        <div class="leave-application-inputs-container">
+          <label for="leave-application-user-name" class="visually-hidden"></label>
+          <input
+            id="leave-application-user-name"
+            class="leave-application-input"
+            name="leave-application-user-name"
+            type="text"
+            placeholder="Name"
+            pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ ]{2,50}$"
+            required
+          />
 
-            <!----------------------------------------------------------------------------------->
+          <label for="leave-application-user-email" class="visually-hidden"></label>
+          <input
+            id="leave-application-user-email"
+            class="leave-application-input"
+            name="leave-application-user-email"
+            type="email"
+            placeholder="Email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            required
+          />
 
-            <input
-              id="leave-application-user-email"
-              class="leave-application-input"
-              name="leave-application-user-email"
-              type="email"
-              placeholder="Email"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-              required
-            />
+          <label for="leave-application-user-phone" class="visually-hidden"></label>
+          <input
+            id="leave-application-user-phone"
+            class="leave-application-input"
+            name="leave-application-user-phone"
+            type="tel"
+            placeholder="Phone"
+            pattern="^\+?[0-9]{7,15}$"
+            required
+          />
 
-            <!----------------------------------------------------------------------------------->
+          <label for="user-comment" class="visually-hidden"></label>
+          <textarea
+            id="user-comment"
+            class="leave-application-input comment"
+            name="user-comment"
+            placeholder="Comment"
+          ></textarea>
+        </div>
 
-            <input
-              id="leave-application-user-phone"
-              class="leave-application-input"
-              name="leave-application-user-phone"
-              type="tel"
-              placeholder="Phone"
-              pattern="^\+?[0-9]{7,15}$"
-              required
-            />
+        <div class="leave-application-radio-container">
+          <h3 class="leave-application-radio-title">Choose a teacher</h3>
+          <div class="leave-application-radio-label-radio-container">
+            <div class="leave-application-radio-label-radio-item">
+              <input
+                type="radio"
+                class="radio"
+                id="Maria"
+                value="Maria"
+                name="user-choose-teacher"
+                required
+              />
+              <label class="leave-application-radio-label" for="Maria"
+              >Maria</label
+              >
+            </div>
 
-            <!----------------------------------------------------------------------------------->
+            <div class="leave-application-radio-label-radio-item">
+              <input
+                type="radio"
+                class="radio"
+                id="Artem"
+                value="Artem"
+                name="user-choose-teacher"
+                required
+              />
+              <label class="leave-application-radio-label" for="Artem"
+              >Artem</label
+              >
+            </div>
 
-            <textarea
-              id="user-comment"
-              class="leave-application-input comment"
-              name="user-comment"
-              placeholder="Comment"
-            ></textarea>
-          </div>
+            <div class="leave-application-radio-label-radio-item">
+              <input
+                type="radio"
+                class="radio"
+                id="Ilona"
+                value="Ilona"
+                name="user-choose-teacher"
+                required
+              />
+              <label class="leave-application-radio-label" for="Ilona"
+              >Ilona</label
+              >
+            </div>
 
-          <div class="leave-application-radio-container">
-            <h3 class="leave-application-radio-title">Choose a teacher</h3>
-            <div class="leave-application-radio-label-radio-container">
-              <div class="leave-application-radio-label-radio-item">
-                <input
-                  type="radio"
-                  class="radio"
-                  id="Maria"
-                  value="Maria"
-                  name="user-choose-teacher"
-                  required
-                />
-                <label class="leave-application-radio-label" for="Maria"
-                  >Maria</label
-                >
-              </div>
-
-              <!----------------------------------------------------------------------------------->
-
-              <div class="leave-application-radio-label-radio-item">
-                <input
-                  type="radio"
-                  class="radio"
-                  id="Artem"
-                  value="Artem"
-                  name="user-choose-teacher"
-                  required
-                />
-                <label class="leave-application-radio-label" for="Artem"
-                  >Artem</label
-                >
-              </div>
-
-              <!----------------------------------------------------------------------------------->
-
-              <div class="leave-application-radio-label-radio-item">
-                <input
-                  type="radio"
-                  class="radio"
-                  id="Ilona"
-                  value="Ilona"
-                  name="user-choose-teacher"
-                  required
-                />
-                <label class="leave-application-radio-label" for="Ilona"
-                  >Ilona</label
-                >
-              </div>
-
-              <!----------------------------------------------------------------------------------->
-
-              <div class="leave-application-radio-label-radio-item">
-                <input
-                  type="radio"
-                  class="radio"
-                  id="Volodymyr"
-                  value="Volodymyr"
-                  name="user-choose-teacher"
-                  required
-                />
-                <label class="leave-application-radio-label" for="Volodymyr"
-                  >Volodymyr</label
-                >
-              </div>
+            <div class="leave-application-radio-label-radio-item">
+              <input
+                type="radio"
+                class="radio"
+                id="Volodymyr"
+                value="Volodymyr"
+                name="user-choose-teacher"
+                required
+              />
+              <label class="leave-application-radio-label" for="Volodymyr"
+              >Volodymyr</label
+              >
             </div>
           </div>
+        </div>
 
-          <button type="submit" class="leave-application-button button">
-            Send
-          </button>
-          <p class="leave-application-privacy">
-            By clicking on “Send” button, you agree to our
-            <a href="#" class="leave-application-privacy-link">Privacy Policy</a
-            >,<br />
-            and allow Promodo to use this information for marketing purposes.
-          </p>
-        </form>
-      </div>
+        <button type="submit" class="leave-application-button button">
+          Send
+        </button>
+        <p class="leave-application-privacy">
+          By clicking on “Send” button, you agree to our
+          <a href="#" class="leave-application-privacy-link">Privacy Policy</a
+          >,<br/>
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
     </div>
   </div>
 </section>

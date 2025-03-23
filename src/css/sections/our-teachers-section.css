@@ -13,20 +13,24 @@
   margin-bottom: 40px;
   letter-spacing: normal;
 }
+
 .team-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
 .team-card {
   text-align: center;
 }
+
 .team-img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
   border-radius: 50%;
 }
+
 .team-member {
   color: var(--black-color);
   font-size: 20px;
@@ -34,12 +38,14 @@
   letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
+
 .team-text {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: normal;
 }
+
 @media screen and (min-width: 768px) {
   .team-card {
     width: 272px;
@@ -63,6 +69,7 @@
     line-height: 1.6;
     margin-bottom: 64px;
   }
+
   .team-text {
     font-size: 16px;
     line-height: 1.5;
@@ -79,6 +86,7 @@
     margin-right: auto;
     margin-left: auto;
   }
+
   .team-list {
     width: 1024px;
     flex-wrap: nowrap;

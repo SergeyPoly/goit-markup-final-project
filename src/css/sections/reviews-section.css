@@ -16,7 +16,6 @@
 
 .review-card {
   background-color: var(--primary-background-color);
-  border-radius: var(--card-border-radius);
   padding: 32px 16px 40px;
   flex: 1;
   display: none;

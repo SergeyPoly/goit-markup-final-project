@@ -1,24 +1,19 @@
-.leave-application-hidden {
-  /*TODO для цього є класс у base стилях visually-hidden*/
+.leave-application-image-container {
   display: none;
 }
 
-.leave-application-container {
+.leave-application-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/*TODO якщо згідно макету у input немає label навіщо взагалі його у розмітці html прописувати, а потім ховати стилями??*/
-.leave-application-label {
-  display: none;
-}
-
-.leave-application-container .section-description.with-offset {
+.leave-application-section .section-description.with-offset {
   margin-bottom: 20px;
 }
 
 .leave-application-inputs-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -32,9 +27,7 @@
   height: 50px;
   border: 1px solid var(--input-border-color);
   border-radius: 12px;
-
   transition: border var(--primary-transition);
-
   padding: 16px 18px;
 }
 
@@ -46,6 +39,7 @@
 .comment::placeholder {
   color: var(--black-color);
 }
+
 .comment {
   min-height: 94px;
 }
@@ -68,6 +62,7 @@
 }
 
 .leave-application-input:not(textarea):not(:placeholder-shown):invalid:not(:focus) {
+  color: var(--error-color);
   border-color: var(--error-color);
 }
 
@@ -98,15 +93,12 @@
 .radio {
   all: unset;
   position: relative;
-
   width: 16px;
   height: 16px;
   border-radius: 50%;
   border: 2px solid var(--radio-button-color);
-
   transition: border var(--primary-transition);
   cursor: pointer;
-
   display: inline-block;
 }
 
@@ -117,12 +109,10 @@
   border-radius: 50%;
   opacity: 0;
   transition: opacity var(--primary-transition);
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   box-shadow: inset 10px 10px var(--primary-accent-color);
 }
 
@@ -148,9 +138,7 @@
 .leave-application-privacy {
   text-align: left;
   line-height: 1.3;
-
   font-size: 12px;
-
   margin-top: 16px;
 }
 
@@ -167,7 +155,8 @@
     font-size: 16px;
   }
 
-  .leave-application-container .section-description.with-offset {
+  .leave-application-section .section-description.with-offset {
+    width: 586px;
     margin-bottom: 64px;
   }
 
@@ -178,15 +167,6 @@
     width: 500px;
   }
 
-  /*TODO label цілковито схований, не розумію, яка різниці який там шрифт??*/
-  .leave-application-label {
-    font-size: 16px;
-  }
-
-  .leave-application-input {
-    min-width: 500px;
-  }
-
   .leave-application-radio-title {
     font-size: 20px;
   }
@@ -195,7 +175,7 @@
     flex-direction: row;
   }
 
-  .leave-application-container .leave-application-radio-container {
+  .leave-application-radio-container {
     margin-right: auto;
   }
 
@@ -211,24 +191,17 @@
 }
 /* -------------------------------DESKTOP SECTION-------------------------------- */
 @media (min-width: 1280px) {
-  /*TODO навіщо знадобилось два окремих ідентичних текста під кнопкою??*/
-  .leave-application-hidden-for-desktop {
-    display: none;
-  }
-  .leave-application-hidden {
-    display: block;
-  }
-  .leave-application-form {
-    margin-top: 0;
+  .leave-application-section .section-description.with-offset {
+    width: 709px;
   }
 
   .leave-application-image-form-container {
     display: flex;
-
     gap: 32px;
   }
 
   .leave-application-image-container {
+    display: block;
     width: 492px;
     height: 578px;
     background-color: var(--primary-accent-color);
@@ -261,7 +234,7 @@
   }
 
   .comment {
-    min-height: 104px;
+    height: 104px;
   }
 
   .leave-application-radio-container {
